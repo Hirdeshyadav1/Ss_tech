@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SS_TECH_COMPUTER89 – Computer • PC Build • Sales • Service</title>
+<meta name="description" content="SS_TECH_COMPUTER89: quality PC parts, custom PC builds, sales and service. Trusted support and customer care.">
+<meta name="theme-color" content="#05060f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SS_TECH_COMPUTER89">
+<meta property="og:description" content="Computer • PC Build • Sales • Service. Quality Parts • Trusted Support • Customer Care.">
+<meta property="og:image" content="icon-512.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="logo-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="splashing">
+
+<div id="splash" aria-label="SS_TECH_COMPUTER89 intro">
+  <canvas></canvas>
+  <div class="splash-in">
+    <img class="splash-logo" src="logo.png" alt="SS.TECH & Computers logo" width="150" height="150">
+    <svg class="pc" viewBox="0 0 120 90" aria-hidden="true">
+      <rect class="s1" x="10" y="6" width="100" height="62" rx="6"/>
+      <rect class="s2" x="18" y="14" width="84" height="46" rx="3"/>
+      <path class="s3" d="M50 68v10M70 68v10M38 80h44"/>
+      <path class="s4" d="M28 46l14-16 12 10 14-18 16 22"/>
+    </svg>
+    <div class="logo-text big">SS_TECH_COMPUTER89</div>
+    <div class="sub late">COMPUTER • PC BUILD • SALES • SERVICE</div>
+  </div>
+  <button id="skip" class="skip">Skip</button>
+</div>
+
+<div id="offline" hidden role="alert">No internet connection.</div>
+
+<header id="topbar">
+  <a class="brand" href="#/home"><img src="logo-192.png" alt="" width="34" height="34"><span class="logo-text">SS_TECH_COMPUTER89</span></a>
+  <div class="actions">
+    <a id="btn-login" class="btn sm" href="#/login">Login</a>
+    <a id="btn-notif" class="iconbtn" href="#/notifications" hidden aria-label="Notifications">🔔<span id="notif-badge" class="badge" hidden></span></a>
+    <a id="btn-cart" class="iconbtn" href="#/cart" aria-label="Cart">🛒<span id="cart-badge" class="badge" hidden></span></a>
+  </div>
+</header>
+
+<main id="view"><noscript>Please enable JavaScript to use this app.</noscript></main>
+
+<nav id="bottomnav" aria-label="Main">
+  <a href="#/home" data-r="/home"><span>🏠</span>Home</a>
+  <a href="#/shop" data-r="/shop"><span>🛍️</span>Shop</a>
+  <a href="#/cart" data-r="/cart"><span>🛒</span>Cart</a>
+  <a href="#/orders" data-r="/orders"><span>📦</span>Orders</a>
+  <a href="#/profile" id="nav-profile" data-r="/profile"><span>👤</span>Account</a>
+  <a href="#/support" data-r="/support" class="desk"><span>💬</span>Support</a>
+</nav>
+
+<div id="toasts" aria-live="polite"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
